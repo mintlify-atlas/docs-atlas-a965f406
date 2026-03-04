@@ -1,0 +1,41 @@
+{
+  "projectType": "saas",
+  "projectName": "Harry Potter Intro Creator",
+  "projectDescription": "Create personalized Harry Potter-style intro videos with custom titles, subtitles, and resolution options delivered via email.",
+  "theme": "almond",
+  "primaryColor": "#7c7c7c",
+  "lightColor": "#070707",
+  "darkColor": "#d3d3d3",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": ["introduction", "quickstart"]
+      },
+      {
+        "group": "Features",
+        "pages": ["features/customization", "features/resolution-options", "features/delivery"]
+      },
+      {
+        "group": "Guides",
+        "pages": ["guides/creating-your-video", "guides/tips-and-tricks", "guides/troubleshooting"]
+      },
+      {
+        "group": "Resources",
+        "pages": ["faq", "examples", "support"]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Custom title and subtitle text",
+    "Multiple resolution options (SD, HD, 4K)",
+    "Email delivery of generated videos",
+    "Harry Potter-themed cinematic intro style",
+    "Simple web-based interface"
+  ],
+  "publicApiSurface": [
+    "Video generation form with title, subtitle, email, and resolution fields",
+    "Email-based video delivery system",
+    "SD, HD, and 4K resolution options"
+  ]
+}
