@@ -1,97 +1,254 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: Harry Potter Intro Creator Documentation
+description: Create personalized Harry Potter-style intro videos with custom titles, subtitles, and resolution options delivered via email
+mode: custom
 ---
 
-## Setting up
+<div className="relative overflow-hidden bg-gradient-to-br from-[#1a1d27] via-[#2d1b3d] to-[#1a1d27] dark:bg-gradient-to-br dark:from-[#0f1117] dark:via-[#1a0f1f] dark:to-[#0f1117] py-20 lg:py-24">
+  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80')] bg-cover bg-center opacity-10"></div>
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black/60"></div>
+  
+  <div className="relative max-w-6xl mx-auto px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div className="lg:col-span-7">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+          Create Your Magical Harry Potter Intro
+        </h1>
+        <p className="text-lg sm:text-xl text-gray-200 dark:text-gray-300 mb-8 max-w-2xl">
+          Transform your story into a cinematic Harry Potter-style intro video. Customize your title, subtitle, and resolution—delivered straight to your inbox within hours.
+        </p>
+        <div className="flex flex-wrap gap-4">
+          <a 
+            href="/quickstart" 
+            className="inline-flex items-center px-6 py-3 rounded-lg bg-[#8a4fff] hover:bg-[#7a3fee] text-white font-semibold transition-colors shadow-lg"
+          >
+            Get Started
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+          <a 
+            href="/examples" 
+            className="inline-flex items-center px-6 py-3 rounded-lg border border-white/30 bg-white/10 hover:bg-white/20 text-white font-semibold transition-colors backdrop-blur-sm"
+          >
+            View Examples
+          </a>
+        </div>
+      </div>
+      
+      <div className="lg:col-span-5 relative">
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+          <img 
+            src="https://i.imgur.com/MOFvBXn.png" 
+            alt="Harry Potter Intro Creator interface showing form fields for title, subtitle, email, and resolution options"
+            className="w-full h-auto"
+            noZoom
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-Get your documentation site up and running in minutes.
+<div className="mt-16 mb-16 max-w-5xl mx-auto px-6">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">Quick Start Guide</h2>
+    <p className="text-base text-gray-600 dark:text-gray-400">Create your personalized Harry Potter intro in minutes</p>
+  </div>
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+  <Steps>
+    <Step title="Visit the Creator">
+      Navigate to [gostargazer.com/harry-potter](https://gostargazer.com/harry-potter/) to access the video creation form.
+    </Step>
+    
+    <Step title="Customize Your Intro">
+      Fill in your details:
+      - **Title**: Your name or main heading (e.g., "John Smith")
+      - **Subtitle**: Your tagline or secondary text (e.g., "The Boy Who Coded")
+      - **Email**: Where you want to receive your video
+      - **Resolution**: Choose from SD, HD, or 4K quality
+      
+      <Note>
+        Higher resolutions produce sharper videos but may take slightly longer to process.
+      </Note>
+    </Step>
+    
+    <Step title="Submit and Wait">
+      After submitting your form, your video will be generated using cinematic Harry Potter-style effects. Processing typically takes a few hours depending on the selected resolution.
+      
+      <Info>
+        You'll receive an email notification once your video is ready to download.
+      </Info>
+    </Step>
+    
+    <Step title="Download and Share">
+      Click the download link in your email to receive your personalized intro video. Share it on social media, use it as a video intro, or enjoy your magical creation!
+    </Step>
+  </Steps>
+</div>
 
-## Make it yours
+<div className="mt-16 mb-16 max-w-5xl mx-auto px-6">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">Key Features</h2>
+    <p className="text-base text-gray-600 dark:text-gray-400">Everything you need to create magical video intros</p>
+  </div>
 
-Design a docs site that looks great and empowers your users.
+  <CardGroup cols={2}>
+    <Card title="Custom Text" icon="wand-magic-sparkles" href="/features/customization">
+      Personalize your video with custom title and subtitle text that appears in authentic Harry Potter styling
+    </Card>
+    <Card title="Multiple Resolutions" icon="tv" href="/features/resolution-options">
+      Choose from SD, HD, or 4K quality to match your needs—from social media clips to high-quality productions
+    </Card>
+    <Card title="Email Delivery" icon="envelope" href="/features/delivery">
+      Receive your finished video directly in your inbox within hours, ready to download and share
+    </Card>
+    <Card title="Cinematic Style" icon="film" href="/examples">
+      Authentic Harry Potter-themed visuals with magical effects, iconic fonts, and cinematic transitions
+    </Card>
+  </CardGroup>
+</div>
 
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+<div className="mt-16 mb-16 max-w-5xl mx-auto px-6">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">Explore by Topic</h2>
+    <p className="text-base text-gray-600 dark:text-gray-400">Learn more about creating perfect intros</p>
+  </div>
 
-## Create beautiful pages
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <a 
+      href="/guides/creating-your-video" 
+      className="group block rounded-2xl border border-gray-200 dark:border-[#27272a] hover:border-[#7c7c7c] dark:hover:border-[#7c7c7c] overflow-hidden no-underline transition-colors bg-white dark:bg-[#1a1d27]"
+    >
+      <div className="h-56 overflow-hidden flex items-center justify-center bg-gradient-to-br from-purple-900 to-indigo-900">
+        <img 
+          src="https://i.imgur.com/aw0pm0T.png" 
+          alt="Step-by-step video creation process" 
+          className="w-full h-full object-cover"
+          noZoom
+        />
+      </div>
+      <div className="p-6">
+        <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#7c7c7c]">Creating Your Video</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Complete walkthrough of the video creation process from start to finish</p>
+        <div className="flex items-center text-sm text-gray-500 dark:text-gray-500 group-hover:text-[#7c7c7c]">
+          Read guide
+          <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+    </a>
 
-Everything you need to create world-class documentation.
+    <a 
+      href="/guides/tips-and-tricks" 
+      className="group block rounded-2xl border border-gray-200 dark:border-[#27272a] hover:border-[#7c7c7c] dark:hover:border-[#7c7c7c] overflow-hidden no-underline transition-colors bg-white dark:bg-[#1a1d27]"
+    >
+      <div className="h-56 overflow-hidden flex items-center justify-center bg-gradient-to-br from-amber-900 to-orange-900">
+        <svg className="w-24 h-24 text-white/20" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      </div>
+      <div className="p-6">
+        <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#7c7c7c]">Tips and Tricks</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Pro tips for crafting the perfect title, choosing resolutions, and optimizing results</p>
+        <div className="flex items-center text-sm text-gray-500 dark:text-gray-500 group-hover:text-[#7c7c7c]">
+          Learn more
+          <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+    </a>
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
+    <a 
+      href="/faq" 
+      className="group block rounded-2xl border border-gray-200 dark:border-[#27272a] hover:border-[#7c7c7c] dark:hover:border-[#7c7c7c] overflow-hidden no-underline transition-colors bg-white dark:bg-[#1a1d27]"
+    >
+      <div className="h-56 overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-900 to-cyan-900">
+        <svg className="w-24 h-24 text-white/20" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+        </svg>
+      </div>
+      <div className="p-6">
+        <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#7c7c7c]">Frequently Asked Questions</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Find answers to common questions about video creation, delivery, and troubleshooting</p>
+        <div className="flex items-center text-sm text-gray-500 dark:text-gray-500 group-hover:text-[#7c7c7c]">
+          View FAQ
+          <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+    </a>
 
-## Need inspiration?
+    <a 
+      href="/guides/troubleshooting" 
+      className="group block rounded-2xl border border-gray-200 dark:border-[#27272a] hover:border-[#7c7c7c] dark:hover:border-[#7c7c7c] overflow-hidden no-underline transition-colors bg-white dark:bg-[#1a1d27]"
+    >
+      <div className="h-56 overflow-hidden flex items-center justify-center bg-gradient-to-br from-red-900 to-pink-900">
+        <svg className="w-24 h-24 text-white/20" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+        </svg>
+      </div>
+      <div className="p-6">
+        <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#7c7c7c]">Troubleshooting</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Solutions for common issues with video generation, delivery, and quality</p>
+        <div className="flex items-center text-sm text-gray-500 dark:text-gray-500 group-hover:text-[#7c7c7c]">
+          Get help
+          <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+<div className="mt-16 mb-16 max-w-5xl mx-auto px-6">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">Resources</h2>
+    <p className="text-base text-gray-600 dark:text-gray-400">Additional help and inspiration</p>
+  </div>
+
+  <CardGroup cols={3}>
+    <Card title="Examples Gallery" icon="images" href="/examples">
+      Browse real examples of Harry Potter intros created by the community
+    </Card>
+    <Card title="Get Support" icon="life-ring" href="/support">
+      Need help? Contact our support team or visit the community forum
+    </Card>
+    <Card title="Visit the App" icon="arrow-up-right-from-square" href="https://gostargazer.com/harry-potter/">
+      Ready to create? Launch the Harry Potter Intro Creator now
+    </Card>
+  </CardGroup>
+</div>
+
+<div className="mt-20 mb-16 max-w-4xl mx-auto px-6">
+  <div className="relative rounded-2xl overflow-hidden border border-gray-200 dark:border-[#27272a] bg-gradient-to-br from-purple-900 to-indigo-900 dark:from-purple-950 dark:to-indigo-950 p-8 lg:p-12">
+    <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80')] bg-cover bg-center opacity-10"></div>
+    <div className="relative text-center">
+      <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">Ready to Create Your Magical Intro?</h2>
+      <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
+        Join thousands of creators who have brought their stories to life with personalized Harry Potter-style intros
+      </p>
+      <div className="flex flex-wrap justify-center gap-4">
+        <a 
+          href="/quickstart" 
+          className="inline-flex items-center px-6 py-3 rounded-lg bg-[#8a4fff] hover:bg-[#7a3fee] text-white font-semibold transition-colors shadow-lg"
+        >
+          Start Creating Now
+          <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+        <a 
+          href="/support" 
+          className="inline-flex items-center px-6 py-3 rounded-lg border border-white/30 bg-white/10 hover:bg-white/20 text-white font-semibold transition-colors backdrop-blur-sm"
+        >
+          Contact Support
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
